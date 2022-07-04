@@ -1,0 +1,1527 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    width: 100%;
+    height: 55px;
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    align-items: center;
+}
+
+.navbar .one {
+    width: 270px;
+    height: 100%;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.navbar .one .fg {
+    width: 20px;
+    height: 20px;
+    background-image: url('../img/figma.png');
+    background-size: cover;
+    margin: 0 15px;
+}
+
+.navbar .one p {
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(228, 228, 228);
+    letter-spacing: 0.5px;
+}
+
+.navbar .one p span {
+    font-weight: 100;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar .one .arro {
+    width: 9px;
+    height: 9px;
+    margin-left: 60px;
+    background-image: url('../img/arrow-down.png');
+    background-size: cover;
+    transition: .5s;
+}
+
+.navbar .one:hover {
+    background-color: black;
+}
+
+.navbar .one:hover p span {
+    color: rgb(228, 228, 228);
+}
+
+.navbar .one:hover .arro {
+    transform: translateY(5px);
+}
+
+.navbar .one:hover .isi {
+    display: block;
+}
+
+.navbar .isi {
+    width: 285px;
+    height: 190px;
+    background-color: rgb(34, 34, 34);
+    position: absolute;
+    top: 66px;
+    left: 10px;
+    border-radius: 2px;
+    display: none;
+}
+
+.navbar .isi::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-top-left-radius: 500px;
+    transform: rotate(-135deg);
+    background-color: rgb(34, 34, 34);
+    position: absolute;
+    top: -6px;
+    left: 223px;
+}
+
+.navbar .isi h5 {
+    font-size: 13px;
+    width: 100%;
+    height: 40px;
+    color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: flex-end;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.navbar .isi a .kesatu {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(0, 174, 255);
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .isi a .kesatu .circle {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(0, 140, 255);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    margin: 0 10px;
+    text-align: center;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar .isi a .kesatu p {
+    font-weight: bold;
+    color: rgb(253, 253, 253);
+}
+
+.navbar .isi a .kesatu .ceklis {
+    width: 13px;
+    height: 13px;
+    background-image: url('../img/tick.png');
+    background-size: cover;
+    margin-left: 60px;
+}
+
+.navbar .isi hr {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar .isi a .kedua {
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+    color: rgb(228, 228, 228);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    transition: .2s;
+}
+
+.navbar .isi a .kedua:hover {
+    background-color: rgb(0, 174, 255);
+}
+
+.navbar .isi a .kedua .global {
+    width: 26px;
+    height: 26px;
+    background-image: url('../img/web-white.png');
+    background-size: cover;
+    margin: 0 10px;
+}
+
+.navbar .isi a .kedua p {
+    padding-top: 3px;
+    font-size: 14px;
+    color: rgb(253, 253, 253);
+}
+
+.navbar .isi a .kedua p span {
+    padding-left: 20px;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar .isi a .kedua:hover p span {
+    color: #fff;
+}
+
+/* two */
+.navbar .two {
+    width: 400px;
+    height: 45px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-left: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .two:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.navbar .two .search {
+    width: 20px;
+    height: 20px;
+    background-image: url('../img/search.png');
+    background-size: cover;
+    margin-left: 20px;
+}
+.navbar .two form input {
+    position: relative;
+    margin-left: 15px;
+    top: -11px;
+    padding: 20px;
+    width: 350px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+::placeholder {
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.16px;
+}
+.navbar .two form input:focus {
+    color: #fff;
+}
+
+/* three */
+.navbar .three {
+    width: 55px;
+    height: 100%;
+    margin-left: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .three:hover {
+    background-color: black;
+}
+
+.navbar .three .bell {
+    width: 20px;
+    height: 20px;
+    background-image: url('../img/bell.png');
+    background-size: cover;
+}
+
+/* four */
+.navbar .four {
+    width: 90px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .four .akun {
+    width: 32px;
+    height: 32px;
+    background-color: rgb(0, 140, 255);
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.navbar .four .arrow-down {
+    width: 9px;
+    height: 9px;
+    margin-left: 25px;
+    background-image: url('../img/arrow-down.png');
+    background-size: cover;
+    transition: .5s;
+}
+
+.navbar .four:hover {
+    background-color: black;
+}
+
+.navbar .four:hover .arrow-down {
+    transform: translateY(5px);
+}
+
+.navbar .four .setting-menu {
+    width: 280px;
+    height: 423px;
+    background-color: rgb(34, 34, 34);
+    position: absolute;
+    top: 65px;
+    right: 10px;
+    border-radius: 3px;
+    display: none;
+}
+
+.navbar .four .setting-menu::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-top-left-radius: 500px;
+    transform: rotate(-135deg);
+    background-color: rgb(34, 34, 34);
+    position: absolute;
+    top: -4px;
+    left: 234px;
+}
+
+.navbar .four:hover .setting-menu {
+    display: block;
+}
+
+.navbar .four .setting-menu .gmail {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .four .setting-menu .gmail .ft {
+    width: 46px;
+    height: 35px;
+    background-color: rgb(0, 140, 255);
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin: 0 20px;
+}
+
+.navbar .four .setting-menu .gmail h4 {
+    color: rgb(253, 253, 253);
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.navbar .four .setting-menu .gmail h4 span {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar .four .setting-menu ul li {
+    list-style: none;
+}
+
+.navbar .four .setting-menu .bung1:hover {
+    background-color: rgb(0, 174, 255);
+}
+
+.navbar .four .setting-menu .bung1 {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .four .setting-menu .bung1 .cp {
+    width: 25px;
+    height: 25px;
+    background-image: url('../img/web-white.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 24px;
+}
+
+.navbar .four .setting-menu .bung1 p {
+    color: #fff;
+    padding-left: 2px;
+}
+
+.navbar .four .setting-menu .bung2:hover {
+    background-color: rgb(0, 174, 255);
+}
+
+.navbar .four .setting-menu .bung2 {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .four .setting-menu .bung2 .cp {
+    width: 23px;
+    height: 23px;
+    background-image: url('../img/user.png');
+    background-size: 23px;
+    background-repeat: no-repeat;
+    margin: 0 26px;
+}
+
+.navbar .four .setting-menu .bung2 p {
+    color: #fff;
+    padding-left: 2px;
+}
+
+.navbar .four .setting-menu .bung3:hover {
+    background-color: rgb(0, 174, 255);
+}
+
+.navbar .four .setting-menu .bung3 {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .four .setting-menu .bung3 .cp {
+    width: 25px;
+    height: 25px;
+    background-image: url('../img/puzzle.png');
+    background-size: 25px;
+    margin: 0 25px;
+    transform: rotate(180deg);
+}
+
+.navbar .four .setting-menu .bung3 p {
+    color: #fff;
+    padding-left: 2px;
+}
+
+.navbar .four .setting-menu .bung4:hover {
+    background-color: rgb(0, 174, 255);
+}
+
+.navbar .four .setting-menu .bung4 {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .four .setting-menu .bung4 .cp {
+    width: 21px;
+    height: 21px;
+    background-image: url('../img/control.png');
+    background-size: cover;
+    margin: 0 27px;
+    transform: rotate(90deg);
+}
+
+.navbar .four .setting-menu .bung4 p {
+    color: #fff;
+    padding-left: 2px;
+}
+
+.navbar .four .setting-menu .bung5:hover {
+    background-color: rgb(0, 174, 255);
+}
+
+.navbar .four .setting-menu .bung5 {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .four .setting-menu .bung5 .cp {
+    width: 31px;
+    height: 31px;
+    background-image: url('../img/theme.png');
+    background-size: cover;
+    margin: 0 22px;
+}
+
+.navbar .four .setting-menu .bung5 p {
+    color: #fff;
+    padding-left: 2px;
+}
+
+.navbar .four .setting-menu .bung5 .pb {
+    width: 10px;
+    height: 10px;
+    background-image: url('../img/arrow-down.png');
+    background-size: cover;
+    margin-left: 110px;
+    transform: rotate(-90deg);
+    transition: .5s;
+}
+
+.navbar .four .setting-menu .bung5:hover .pb {
+    transform: rotate(0);
+}
+
+.navbar .four .setting-menu .bung5 .tema-menu {
+    width: 200px;
+    height: 110px;
+    background-color: rgb(34, 34, 34);
+    position: absolute;
+    right: 281px;
+    top: 220px;
+    border-radius: 3px;
+    display: none;
+}
+
+.navbar .four .setting-menu .bung5:hover .tema-menu {
+    display: block;
+}
+
+.navbar .four .setting-menu .bung5 .tema-menu .light {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.navbar .four .setting-menu .bung5 .tema-menu .light:hover {
+    background-color: rgb(0, 174, 255);
+}
+
+.navbar .four .setting-menu .bung5 .tema-menu .light .log {
+    width: 10px;
+    height: 10px;
+    background-image: url('../img/tick.png');
+    background-size: cover;
+    margin: 0 10px;
+}
+
+.navbar .four .setting-menu .bung5 .tema-menu .dark {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.navbar .four .setting-menu .bung5 .tema-menu .dark:hover {
+    background-color: rgb(0, 174, 255);
+}
+
+.navbar .four .setting-menu .bung5 .tema-menu .system {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.navbar .four .setting-menu .bung5 .tema-menu .system:hover {
+    background-color: rgb(0, 174, 255);
+}
+
+.navbar .four .setting-menu .bung6:hover {
+    background-color: rgb(0, 174, 255);
+}
+
+.navbar .four .setting-menu .bung6 {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.navbar .four .setting-menu .bung6 .cp {
+    width: 21px;
+    height: 21px;
+    background-image: url('../img/download.png');
+    background-size: cover;
+    margin: 0 27px;
+}
+
+.navbar .four .setting-menu .bung6 p {
+    color: #fff;
+    padding-left: 2px;
+}
+
+.navbar .four .setting-menu hr {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar .four .setting-menu .bung7:hover {
+    background-color: rgb(0, 174, 255);
+}
+
+.navbar .four .setting-menu .bung7 {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.navbar .four .setting-menu .bung7 .cp {
+    width: 17px;
+    height: 17px;
+    background-image: url('../img/plus.png');
+    background-size: cover;
+    margin: 0 30px;
+}
+
+.navbar .four .setting-menu .bung7 p {
+    color: #fff;
+    padding-left: 2px;
+}
+
+.navbar .four .setting-menu .bung8:hover {
+    background-color: rgb(0, 174, 255);
+}
+
+.navbar .four .setting-menu .bung8 {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .four .setting-menu .bung8 .cp {
+    width: 20px;
+    height: 20px;
+    background-image: url('../img/exit.png');
+    background-size: cover;
+    margin: 0 30px;
+}
+
+.navbar .four .setting-menu .bung8 p {
+    color: #fff;
+    padding-left: 2px;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    height: 666px;
+    display: flex;
+}
+
+/* sidebar */
+.side-bar {
+    width: 330px;
+    height: 665px;
+    border-right: 1px solid rgba(0, 0, 0, .1);
+    display: flex;
+    flex-direction: column;
+}
+
+.side-bar .first {
+    width: 100%;
+    height: 115px;
+    margin-bottom: 15px;
+}
+
+/* recent */
+.side-bar .first .recents {
+    width: 100%;
+    height: 35px;
+    background-color: rgba(42, 195, 255, 0.1);
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.side-bar .first .recents .jam {
+    width: 18px;
+    height: 18px;
+    background-image: url('../img/jam.png');
+    background-size: cover;
+    margin: 0 20px;
+}
+
+.side-bar .first .recents p {
+    font-size: 13px;
+}
+
+/* draft */
+.side-bar .first .drafts {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.side-bar .first .drafts:hover {
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.side-bar .first .drafts .kertas {
+    width: 18px;
+    height: 18px;
+    background-image: url('../img/file.png');
+    background-size: cover;
+    margin: 0 20px;
+}
+
+.side-bar .first .drafts p {
+    font-size: 13px;
+}
+
+.side-bar .first .drafts .tambah {
+    width: 35px;
+    height: 35px;
+    background-image: url('../img/add.png');
+    background-size: 13px;
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+    margin-left: 120px;
+    display: none;
+}
+
+.side-bar .first .drafts:hover .tambah {
+    display: block;
+}
+
+.side-bar .first .drafts .tambah:hover {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+/* comunity */
+.side-bar .first .comunitas {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.side-bar .first .comunitas:hover {
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.side-bar .first .comunitas .logo {
+    width: 18px;
+    height: 18px;
+    background-image: url('../img/web.png');
+    background-size: cover;
+    margin: 0 20px;
+}
+
+.side-bar .first .comunitas p {
+    font-size: 13px;
+    color: black;
+}
+
+.side-bar .first .comunitas .right-arrow {
+    width: 20px;
+    height: 20px;
+    background-image: url('../img/right-arrow.png');
+    background-size: cover;
+    margin-left: 95px;
+    transition: .5s;
+}
+
+.side-bar .first .comunitas:hover .right-arrow {
+    transform: translateX(10px);
+}
+
+.side-bar hr {
+    width: 240px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    margin-left: 15px;
+}
+
+/* side-bar > second */
+.side-bar .second {
+    width: 100%;
+    height: 140px;
+    display: flex;
+}
+
+.side-bar .second .up-arrow {
+    width: 50px;
+    height: 100%;
+    background-image: url('../img/up-arrow.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 20px 28px;
+}
+
+.side-bar .second .right p {
+    padding: 32px 0 0 8px;
+    font-size: 13px;
+    letter-spacing: 0.56px;
+    line-height: 17px;
+}
+
+.side-bar .second .right button {
+    width: 80px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: transparent;
+    margin: 15px 0 0 10px;
+}
+
+.side-bar .second .template {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    display: none;
+}
+
+.side-bar .second .template .harga {
+    width: 620px;
+    height: 550px;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow-y: scroll;
+    margin: 80px auto;
+}
+
+.side-bar .second .template .harga a .tombol-hilang {
+    width: 35px;
+    height: 35px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 35px;
+    margin-left: 5px;
+    margin-top: 5px;
+    font-size: 18px;
+    color: black;
+}
+
+.side-bar .second .template .harga a .tombol-hilang:hover {
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.side-bar .second .template .harga h2 {
+    text-align: center;
+    font-size: 28px;
+}
+.side-bar .second .template .harga .tatakan {
+    width: 100%;
+    height: 580px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.side-bar .second .template .harga .tatakan .professional {
+    width: 270px;
+    height: 550px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    margin-top: 15px;
+}
+
+.side-bar .second .template .harga .tatakan .professional h3 {
+    padding: 30px 0 0 17px;
+}
+
+.side-bar .second .template .harga .tatakan .professional .capt {
+    font-size: 12px;
+    color: rgba(0, 0, 0, .5);
+    margin: -20px 0 0 10px;
+}
+
+.side-bar .second .template .harga .tatakan .professional .harga-figsign {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.side-bar .second .template .harga .tatakan .professional .harga-figsign h5 {
+    padding-left: 18px;
+    font-size: 12px;
+    color: rgba(0, 0, 0, .7);
+}
+
+.side-bar .second .template .harga .tatakan .professional .harga-figsign .total {
+    padding-left: 88px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.side-bar .second .template .harga .tatakan .professional .harga-figjam {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.side-bar .second .template .harga .tatakan .professional .harga-figjam h5 {
+    padding-left: 18px;
+    font-size: 12px;
+    color: rgba(0, 0, 0, .7);
+}
+
+.side-bar .second .template .harga .tatakan .professional .harga-figjam .total {
+    padding-left: 135px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.side-bar .second .template .harga .tatakan .professional .btn {
+    width: 226px;
+    margin-left: 19px;
+    background: linear-gradient(rgb(0, 132, 255), rgb(0, 119, 255));
+    border: none;
+    color: #fff;
+}
+
+.side-bar .second .template .harga .tatakan .professional hr {
+    width: 230px;
+    margin: 20px auto;
+}
+
+.side-bar .second .template .harga .tatakan .professional ul {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    margin-top: -10px;
+}
+
+.side-bar .second .template .harga .tatakan .professional ul li {
+    list-style: none;
+    color: rgba(0, 0, 0, .7);
+}
+
+.side-bar .second .template .harga .tatakan .professional ul li .all-li {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    align-items: center;
+}
+
+.side-bar .second .template .harga .tatakan .professional ul li .contreng {
+    width: 10px;
+    height: 10px;
+    background-image: url('../img/ceklis.png');
+    background-size: cover;
+    margin: 0 0 0 22px;
+}
+
+.side-bar .second .template .harga .tatakan .professional ul li .all-li p {
+    margin-top: -30px;
+    font-size: 12px;
+}
+
+.side-bar .second .template .harga .tatakan .professional a .see-all {
+    width: 120px;
+    margin-left: 41px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.side-bar .second .template .harga .tatakan .professional a .see-all span {
+    font-size: 12px;
+    color: #007EFF;
+}
+
+.side-bar .second .template .harga .tatakan .professional a .see-all .logo-see-all {
+    width: 10px;
+    height: 10px;
+    background-image: url('../img/blue-right-arrow.png');
+    background-size: cover;
+    margin-left: 5px;
+}
+
+.side-bar .second .template .harga .tatakan .organization {
+    width: 270px;
+    height: 550px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    margin-top: 15px;
+}
+
+.side-bar .second .template .harga .tatakan .organization h3 {
+    padding: 30px 0 0 17px;
+}
+
+.side-bar .second .template .harga .tatakan .organization .capt {
+    font-size: 12px;
+    color: rgba(0, 0, 0, .5);
+    margin: -20px 0 0 10px;
+}
+
+.side-bar .second .template .harga .tatakan .organization .harga-figsign {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.side-bar .second .template .harga .tatakan .organization .harga-figsign h5 {
+    padding-left: 18px;
+    font-size: 12px;
+    color: rgba(0, 0, 0, .7);
+}
+
+.side-bar .second .template .harga .tatakan .organization .harga-figsign .total {
+    padding-left: 88px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.side-bar .second .template .harga .tatakan .organization .harga-figjam {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.side-bar .second .template .harga .tatakan .organization .harga-figjam h5 {
+    padding-left: 18px;
+    font-size: 12px;
+    color: rgba(0, 0, 0, .7);
+}
+
+.side-bar .second .template .harga .tatakan .organization .harga-figjam .total {
+    padding-left: 135px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.side-bar .second .template .harga .tatakan .organization .btn {
+    width: 226px;
+    margin-left: 19px;
+    background: linear-gradient(rgb(0, 132, 255), rgb(0, 119, 255));
+    border: none;
+    color: #fff;
+}
+
+.side-bar .second .template .harga .tatakan .organization .cs {
+    width: 100%;
+    height: 20px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.side-bar .second .template .harga .tatakan .organization .cs span {
+    font-size: 12px;
+    padding-left: 19px;
+    color: rgba(0, 0, 0, .7);
+}
+
+.side-bar .second .template .harga .tatakan .organization .cs span a {
+    color: #007EFF;
+}
+
+.side-bar .second .template .harga .tatakan .organization hr {
+    width: 230px;
+    margin: 10px auto 0;
+}
+
+.side-bar .second .template .harga .tatakan .organization .eipp {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.side-bar .second .template .harga .tatakan .organization .eipp .ic {
+    width: 15px;
+    height: 15px;
+    background-image: url('../img/right-arrow.png');
+    background-size: cover;
+    transform: rotate(180deg);
+    margin: 0 10px 0 20px;
+}
+
+.side-bar .second .template .harga .tatakan .organization .eipp span {
+    font-size: 12px;
+    color: rgba(0, 0, 0, .7);
+}
+
+.side-bar .second .template .harga .tatakan .organization ul {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    margin-top: -10px;
+}
+
+.side-bar .second .template .harga .tatakan .organization ul li {
+    list-style: none;
+    color: rgba(0, 0, 0, .7);
+}
+
+.side-bar .second .template .harga .tatakan .organization ul li .all-li {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    align-items: center;
+}
+
+.side-bar .second .template .harga .tatakan .organization ul li .contreng {
+    width: 10px;
+    height: 10px;
+    background-image: url('../img/ceklis.png');
+    background-size: cover;
+    margin: 0 0 0 22px;
+}
+
+.side-bar .second .template .harga .tatakan .organization ul li .all-li p {
+    margin-top: -30px;
+    font-size: 12px;
+}
+
+.side-bar .second .template .harga .tatakan .organization a .see-all {
+    width: 120px;
+    margin-left: 41px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.side-bar .second .template .harga .tatakan .organization a .see-all span {
+    font-size: 12px;
+    color: #007EFF;
+}
+
+.side-bar .second .template .harga .tatakan .organization a .see-all .logo-see-all {
+    width: 10px;
+    height: 10px;
+    background-image: url('../img/blue-right-arrow.png');
+    background-size: cover;
+    margin-left: 5px;
+}
+
+/* sidebar > thirty */
+.side-bar .thirty {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.side-bar .thirty .triangle {
+    width: 35px;
+    height: 35px;
+    background-image: url('../img/triangle.png');
+    background-size: 8px;
+    background-repeat: no-repeat;
+    background-position: 14px 13px;
+    transform: rotate(90deg);
+    border-radius: 5px;
+    margin: 0 10px 0 15px;
+}
+
+.side-bar .thirty .triangle:hover {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.side-bar .thirty .trans {
+    content: '';
+    position: absolute;
+    left: 15px;
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: transparent;
+    display: none;
+}
+
+.side-bar .thirty .trans:hover {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.side-bar .thirty span {
+    font-size: 13px;
+    letter-spacing: 0.56px;
+}
+
+.side-bar .text {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.side-bar .text p {
+    font-size: 12px;
+    padding-left: 15px;
+    color: rgba(0, 0, 0, .5);
+}
+
+/* sidebar > fourty */
+.side-bar .fourty {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin: 5px 0 0 0;
+}
+
+.side-bar .fourty .triangle {
+    width: 35px;
+    height: 35px;
+    background-image: url('../img/triangle.png');
+    background-size: 8px;
+    background-repeat: no-repeat;
+    background-position: 14px 13px;
+    transform: rotate(90deg);
+    border-radius: 5px;
+    margin: 0 10px 0 15px;
+}
+
+.side-bar .fourty .triangle:hover {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.side-bar .fourty .trans {
+    content: '';
+    position: absolute;
+    left: 15px;
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: transparent;
+    display: none;
+}
+
+.side-bar .fourty .trans:hover {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.side-bar .fourty span {
+    font-size: 13px;
+    letter-spacing: 0.56px;
+}
+
+.side-bar .isi-teams {
+    width: 100%;
+    height: 108px;
+    display: none;
+}
+
+/* isi-teams > userteam */
+.side-bar .isi-teams .user-team {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.side-bar .isi-teams .user-team:hover {
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.side-bar .isi-teams .user-team .kuning {
+    width: 17px;
+    height: 17px;
+    background-color: rgb(255, 238, 0);
+    border-radius: 2px;
+    margin: 0 20px 0 22px;
+}
+
+.side-bar .isi-teams .user-team span {
+    font-size: 12px;
+    color: black;
+}
+
+.side-bar .isi-teams .user-team .tambah-team {
+    width: 34px;
+    height: 34px;
+    background-image: url('../img/add.png');
+    background-size: 13px;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    margin-left: 19px;
+    display: none;
+}
+
+.side-bar .isi-teams .user-team:hover .tambah-team {
+    display: block;
+}
+
+.side-bar .isi-teams .user-team .tambah-team:hover {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+/* isi-teams > team-project */
+.side-bar .isi-teams .team-project {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.side-bar .isi-teams .team-project:hover {
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.side-bar .isi-teams .team-project span {
+    font-size: 12px;
+    color: black;
+    padding-left: 58px;
+}
+
+.side-bar .isi-teams .team-project .tambah-team {
+    width: 34px;
+    height: 34px;
+    background-image: url('../img/add.png');
+    background-size: 13px;
+    background-position: 10.27px 10px;
+    background-repeat: no-repeat;
+    margin-left: 85px;
+    display: none;
+}
+
+.side-bar .isi-teams .team-project:hover .tambah-team {
+    display: block;
+}
+
+.side-bar .isi-teams .team-project .tambah-team:hover {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+/* isi-teams > create new team */
+.side-bar .isi-teams .cnt {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.side-bar .isi-teams .cnt:hover {
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.side-bar .isi-teams .cnt .tambah-cnt {
+    width: 17px;
+    height: 17px;
+    background-image: url('../img/add.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 19px 0 22px;
+}
+
+.side-bar .isi-teams .cnt span {
+    font-size: 12px;
+    letter-spacing: 0;
+    color: black;
+}
+
+/* samping navbar */
+.bungkus {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.atas {
+    width: 100%;
+    height: 186px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.atas .title {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+}
+
+.atas .new {
+    width: 100%;
+    height: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.atas .new .new-design {
+    width: 350px;
+    height: 80px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.atas .new .new-design .icon {
+    width: 33px;
+    height: 33px;
+    background-image: url('../img/new_design.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+}
+
+.atas .new .new-design p {
+    font-size: 14px;
+    padding-left: 10px;
+    letter-spacing: 0.7px;
+    line-height: 23px;
+    color: black;
+}
+
+.atas .new .new-design p span {
+    font-size: 12px;
+    color: rgba(0, 0, 0, .5);
+}
+
+.atas .new .new-design .add {
+    width: 18px;
+    height: 18px;
+    background-image: url('../img/add.png');
+    background-size: cover;
+    margin-left: 100px;
+}
+
+.atas .new .new-design:hover {
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.atas .new .new-figjam {
+    width: 350px;
+    height: 80px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.atas .new .new-figjam .icon {
+    width: 33px;
+    height: 33px;
+    background-image: url('../img/new_figjam.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+}
+
+.atas .new .new-figjam p {
+    font-size: 14px;
+    padding-left: 10px;
+    letter-spacing: 0.7px;
+    line-height: 23px;
+    color: black;
+}
+
+.atas .new .new-figjam p span {
+    font-size: 12px;
+    color: rgba(0, 0, 0, .5);
+}
+
+.atas .new .new-figjam .add {
+    width: 18px;
+    height: 18px;
+    background-image: url('../img/add.png');
+    background-size: cover;
+    margin-left: 85px;
+}
+
+.atas .new .new-figjam:hover {
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.atas .new .import {
+    width: 350px;
+    height: 80px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.atas .new .import .icon {
+    width: 30px;
+    height: 30px;
+    background-image: url('../img/import.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.atas .new .import p {
+    font-size: 14px;
+    padding-left: 15px;
+    letter-spacing: 0.7px;
+    line-height: 23px;
+    color: black;
+}
+
+.atas .new .import p span {
+    font-size: 12px;
+    color: rgba(0, 0, 0, .5);
+}
+
+.atas .new .import .add {
+    width: 18px;
+    height: 18px;
+    background-image: url('../img/add.png');
+    background-size: cover;
+    margin-left: 55px;
+}
+
+.atas .new .import:hover {
+    background-color: rgba(0, 0, 0, .05);
+}
+
+/* scrol */
+.atas .scrol {
+    width: 100%;
+    height: 481px;
+    overflow-y: scroll;
+}
+
+/* scroll-bar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .1);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, .2);
+}
