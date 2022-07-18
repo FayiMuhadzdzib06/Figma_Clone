@@ -319,7 +319,7 @@ a {
 }
 
 .navbar .four .setting-menu .gmail .ft {
-    width: 46px;
+    width: 45px;
     height: 35px;
     background-color: rgb(0, 140, 255);
     border-radius: 50%;
@@ -333,12 +333,12 @@ a {
 
 .navbar .four .setting-menu .gmail h4 {
     color: rgb(253, 253, 253);
-    font-size: 14px;
+    font-size: 12px;
     line-height: 23px;
 }
 
 .navbar .four .setting-menu .gmail h4 span {
-    font-size: 13px;
+    font-size: 11px;
     color: rgba(255, 255, 255, 0.5);
 }
 
@@ -369,6 +369,7 @@ a {
 .navbar .four .setting-menu .bung1 p {
     color: #fff;
     padding-left: 2px;
+    font-size: 13px;
 }
 
 .navbar .four .setting-menu .bung2:hover {
@@ -394,6 +395,7 @@ a {
 .navbar .four .setting-menu .bung2 p {
     color: #fff;
     padding-left: 2px;
+    font-size: 13px;
 }
 
 .navbar .four .setting-menu .bung3:hover {
@@ -419,6 +421,7 @@ a {
 .navbar .four .setting-menu .bung3 p {
     color: #fff;
     padding-left: 2px;
+    font-size: 13px;
 }
 
 .navbar .four .setting-menu .bung4:hover {
@@ -444,6 +447,7 @@ a {
 .navbar .four .setting-menu .bung4 p {
     color: #fff;
     padding-left: 2px;
+    font-size: 13px;
 }
 
 .navbar .four .setting-menu .bung5:hover {
@@ -468,6 +472,7 @@ a {
 .navbar .four .setting-menu .bung5 p {
     color: #fff;
     padding-left: 2px;
+    font-size: 13px;
 }
 
 .navbar .four .setting-menu .bung5 .pb {
@@ -566,6 +571,7 @@ a {
 .navbar .four .setting-menu .bung6 p {
     color: #fff;
     padding-left: 2px;
+    font-size: 13px;
 }
 
 .navbar .four .setting-menu hr {
@@ -595,6 +601,7 @@ a {
 .navbar .four .setting-menu .bung7 p {
     color: #fff;
     padding-left: 2px;
+    font-size: 13px;
 }
 
 .navbar .four .setting-menu .bung8:hover {
@@ -619,6 +626,7 @@ a {
 .navbar .four .setting-menu .bung8 p {
     color: #fff;
     padding-left: 2px;
+    font-size: 13px;
 }
 
 /* Container */
@@ -738,7 +746,7 @@ a {
     height: 20px;
     background-image: url('../img/right-arrow.png');
     background-size: cover;
-    margin-left: 95px;
+    margin-left: 89px;
     transition: .5s;
 }
 
@@ -1355,7 +1363,8 @@ a {
     border-bottom: 1px solid rgba(0, 0, 0, .1);
     display: flex;
     align-items: center;
-    padding-left: 40px;
+    padding-left: 41px;
+    font-size: 15px;
 }
 
 .atas .new {
@@ -1367,7 +1376,7 @@ a {
 }
 
 .atas .new .new-design {
-    width: 350px;
+    width: 360px;
     height: 80px;
     border: 1px solid rgba(0, 0, 0, .1);
     border-radius: 5px;
@@ -1410,7 +1419,7 @@ a {
 }
 
 .atas .new .new-figjam {
-    width: 350px;
+    width: 360px;
     height: 80px;
     border: 1px solid rgba(0, 0, 0, .1);
     border-radius: 5px;
@@ -1453,7 +1462,7 @@ a {
 }
 
 .atas .new .import {
-    width: 350px;
+    width: 360px;
     height: 80px;
     border: 1px solid rgba(0, 0, 0, .1);
     border-radius: 5px;
@@ -1483,15 +1492,6 @@ a {
     font-size: 12px;
     color: rgba(0, 0, 0, .5);
 }
-
-.atas .new .import .add {
-    width: 18px;
-    height: 18px;
-    background-image: url('../img/add.png');
-    background-size: cover;
-    margin-left: 55px;
-}
-
 .atas .new .import:hover {
     background-color: rgba(0, 0, 0, .05);
 }
@@ -1501,6 +1501,678 @@ a {
     width: 100%;
     height: 481px;
     overflow-y: scroll;
+}
+.atas .scrol .bar-scrol {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.atas .scrol .bar-scrol p {
+    font-size: 12px;
+    color: rgba(0, 0, 0, .5);
+    padding-left: 44px;
+}
+.atas .scrol .bar-scrol .allfiles {
+    width: 70px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.atas .scrol .bar-scrol .allfiles span {
+    font-size: 12px;
+}
+.atas .scrol .bar-scrol .allfiles .logo {
+    width: 8px;
+    height: 8px;
+    background-image: url('../img/black-arrow-down.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 6px;
+    margin-bottom: 2px;
+    transition: .5s;
+}
+.atas .scrol .bar-scrol .allfiles:hover .logo {
+    transform: translateY(5px);
+}
+.atas .scrol .bar-scrol .allfiles .isi-af{
+    position: absolute;
+    width: 200px;
+    height: 120px;
+    background-color: rgb(34, 34, 34);
+    margin-top: 145px;
+    border-radius: 3px;
+    display: none;
+}
+.atas .scrol .bar-scrol .allfiles:hover .isi-af {
+    display: block;
+}
+.atas .scrol .bar-scrol .allfiles .isi-af .af {
+    width: 100%;
+    height: 25px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.atas .scrol .bar-scrol .allfiles .isi-af .af:hover {
+    background-color: rgba(42, 195, 255, 1);
+}
+.atas .scrol .bar-scrol .allfiles .isi-af .af .ceklis {
+    width: 10px;
+    height: 10px;
+    background-image: url('../img/tick.png');
+    background-size: cover;
+    margin: 0 15px;
+}
+.atas .scrol .bar-scrol .allfiles .isi-af .af span {
+    color: #fff;
+}
+.atas .scrol .bar-scrol .allfiles .isi-af .df {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    align-items: center;
+}
+.atas .scrol .bar-scrol .allfiles .isi-af .df:hover {
+    background-color: rgba(42, 195, 255, 1);
+}
+.atas .scrol .bar-scrol .allfiles .isi-af .df span {
+    color: #fff;
+    padding-left: 40px;
+}
+.atas .scrol .bar-scrol .allfiles .isi-af .ff {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    align-items: center;
+}
+.atas .scrol .bar-scrol .allfiles .isi-af .ff:hover {
+    background-color: rgba(42, 195, 255, 1);
+}
+.atas .scrol .bar-scrol .allfiles .isi-af .ff span {
+    color: #fff;
+    padding-left: 40px;
+}
+.atas .scrol .bar-scrol .allfiles .isi-af .proty {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    align-items: center;
+}
+.atas .scrol .bar-scrol .allfiles .isi-af .proty:hover {
+    background-color: rgba(42, 195, 255, 1);
+}
+.atas .scrol .bar-scrol .allfiles .isi-af .proty span {
+    color: #fff;
+    padding-left: 40px;
+}
+/* sort */
+.atas .scrol .bar-scrol .sort {
+    padding-left: 855px;
+    font-size: 12px;
+}
+.atas .scrol .bar-scrol .lastviewed {
+    width: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.atas .scrol .bar-scrol .lastviewed span {
+    font-size: 12px;
+}
+.atas .scrol .bar-scrol .lastviewed .logo {
+    width: 8px;
+    height: 8px;
+    background-image: url('../img/black-arrow-down.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 6px;
+    margin-bottom: 2px;
+    transition: .5s;
+}
+.atas .scrol .bar-scrol .lastviewed:hover .logo {
+    transform: translateY(5px);
+}
+.atas .scrol .bar-scrol .lastviewed .isi-lv{
+    position: absolute;
+    width: 180px;
+    height: 215px;
+    background-color: rgb(34, 34, 34);
+    margin-top: 245px;
+    border-radius: 3px;
+    display: none;
+}
+.atas .scrol .bar-scrol .lastviewed:hover .isi-lv {
+    display: block;
+}
+.atas .scrol .bar-scrol .lastviewed .isi-lv .sb {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.atas .scrol .bar-scrol .lastviewed .isi-lv .sb span {
+    color: rgba(255, 255, 255, 0.5);
+    padding-left: 40px;
+}
+.atas .scrol .bar-scrol .lastviewed .isi-lv .alp {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    align-items: center;
+}
+.atas .scrol .bar-scrol .lastviewed .isi-lv .alp:hover {
+    background-color: rgba(42, 195, 255, 1);
+}
+.atas .scrol .bar-scrol .lastviewed .isi-lv .alp span {
+    color: #fff;
+    padding-left: 40px;
+}
+.atas .scrol .bar-scrol .lastviewed .isi-lv .dc {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    align-items: center;
+}
+.atas .scrol .bar-scrol .lastviewed .isi-lv .dc:hover {
+    background-color: rgba(42, 195, 255, 1);
+}
+.atas .scrol .bar-scrol .lastviewed .isi-lv .dc span {
+    color: #fff;
+    padding-left: 40px;
+}
+.atas .scrol .bar-scrol .lastviewed .isi-lv .lv {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    align-items: center;
+}
+.atas .scrol .bar-scrol .lastviewed .isi-lv .lv:hover {
+    background-color: rgba(42, 195, 255, 1);
+}
+.atas .scrol .bar-scrol .lastviewed .isi-lv .lv .ceklis {
+    width: 10px;
+    height: 10px;
+    background-image: url('../img/tick.png');
+    background-size: cover;
+    margin: 0 15px;
+}
+.atas .scrol .bar-scrol .lastviewed .isi-lv .lv span {
+    color: #fff;
+}
+.atas .scrol .bar-scrol .lastviewed .isi-lv hr {
+    width: 100%;
+    margin: 10px auto;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.atas .scrol .bar-scrol .lastviewed .isi-lv .order {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    align-items: center;
+}
+.atas .scrol .bar-scrol .lastviewed .isi-lv .order {
+    color: rgba(255, 255, 255, 0.5);
+    padding-left: 40px;
+}
+.atas .scrol .bar-scrol .lastviewed .isi-lv .of {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    align-items: center;
+}
+.atas .scrol .bar-scrol .lastviewed .isi-lv .of:hover {
+    background-color: rgba(42, 195, 255, 1);
+}
+.atas .scrol .bar-scrol .lastviewed .isi-lv .of span {
+    color: #fff;
+    padding-left: 40px;
+}
+.atas .scrol .bar-scrol .lastviewed .isi-lv .nf {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    align-items: center;
+}
+.atas .scrol .bar-scrol .lastviewed .isi-lv .nf:hover {
+    background-color: rgba(42, 195, 255, 1);
+}
+.atas .scrol .bar-scrol .lastviewed .isi-lv .nf .ceklis {
+    width: 10px;
+    height: 10px;
+    background-image: url('../img/tick.png');
+    background-size: cover;
+    margin: 0 15px;
+}
+.atas .scrol .bar-scrol .lastviewed .isi-lv .nf span {
+    color: #fff;
+}
+.atas .scrol .bar-scrol .menu-satu {
+    width: 26px;
+    height: 26px;
+    border-radius: 2px;
+    margin-left: 10px;
+    background-color: rgba(0, 0, 0, .05);
+    background-image: url('../img/menu.png');
+    background-size: 14px;
+    background-repeat: no-repeat;
+    background-position: 6px 6px;
+}
+.atas .scrol .bar-scrol .menu-dua {
+    width: 26px;
+    height: 26px;
+    border-radius: 2px;
+    margin-left: 10px;
+    border: 1px solid rgba(0, 0, 0, .05);
+    background-image: url('../img/menu2.png');
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: 4px 5px;
+}
+.atas .scrol .bar-scrol .menu-dua:hover {
+    background-color: rgba(0, 0, 0, .05);
+}
+/* bukus file */
+.atas .scrol .bungkus-file {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+/* file figma 1-1 */
+.atas .scrol .file1-1 {
+    width: 360px;
+    height: 275px;
+    border-radius: 10px;
+    transition: .2s;
+    margin: 15px 0 0 10px;
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+.atas .scrol .file1-1:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+.atas .scrol .file1-1 .img {
+    width: 100%;
+    height: 210px;
+    background-image: url('../img/plaweb-watch.png');
+    background-size: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.atas .scrol .file1-1 .capt {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.atas .scrol .file1-1 .capt .bulet {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .2);
+    margin: 0 20px;
+    background-image: url('../img/triangle.png');
+    background-size: 12px;
+    background-repeat: no-repeat;
+    background-position: 9px 8px;
+    transform: rotate(90deg);
+}
+.atas .scrol .file1-1 .capt p {
+    font-size: 16px;
+    line-height: 20px;
+    color: black;
+}
+.atas .scrol .file1-1 .capt p span {
+    font-size: 12px;
+    color: rgba(0, 0, 0, .5);
+}
+.atas .scrol .file1-1 .capt .star {
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    margin-left: 110px;
+    background-image: url('../img/star.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+    display: none;
+}
+.atas .scrol .file1-1:hover .capt .star {
+    display: block;
+}
+.atas .scrol .file1-1 .capt .star:hover {
+    background-color: rgba(0, 0, 0, .05);
+}
+/* file figma 1-2 */
+.atas .scrol .file1-2 {
+    width: 360px;
+    height: 275px;
+    border-radius: 10px;
+    transition: .2s;
+    margin: 15px 0 0 10px;
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+.atas .scrol .file1-2:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2) ;
+}
+.atas .scrol .file1-2 .img {
+    width: 100%;
+    height: 210px;
+    background-image: url('../img/plaweb-watch.png');
+    background-size: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.atas .scrol .file1-2 .capt {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.atas .scrol .file1-2 .capt .bulet {
+    width: 30px;
+    height: 30px;
+    margin: 0 20px;
+    background-image: url('../img/new_design.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 3px 0;
+}
+.atas .scrol .file1-2 .capt p {
+    font-size: 16px;
+    line-height: 20px;
+    color: black;
+}
+.atas .scrol .file1-2 .capt p span {
+    font-size: 12px;
+    color: rgba(0, 0, 0, .5);
+}
+.atas .scrol .file1-2 .capt .star {
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    margin-left: 65px;
+    background-image: url('../img/star.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+    display: none;
+}
+.atas .scrol .file1-2:hover .capt .star {
+    display: block;
+}
+.atas .scrol .file1-2 .capt .star:hover {
+    background-color: rgba(0, 0, 0, .05);
+}
+/* file figma 1-3 */
+.atas .scrol .file1-3 {
+    width: 360px;
+    height: 275px;
+    border-radius: 10px;
+    transition: .2s;
+    margin: 15px 0 0 10px;
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+.atas .scrol .file1-3:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2) ;
+}
+.atas .scrol .file1-3 .img {
+    width: 100%;
+    height: 210px;
+    background-image: url('../img/aflarc.png');
+    background-size: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.atas .scrol .file1-3 .capt {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top: 1px solid rgba(0, 0, 0, .05);
+}
+.atas .scrol .file1-3 .capt .bulet {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .2);
+    margin: 0 20px;
+    background-image: url('../img/triangle.png');
+    background-size: 12px;
+    background-repeat: no-repeat;
+    background-position: 9px 8px;
+    transform: rotate(90deg);
+}
+.atas .scrol .file1-3 .capt p {
+    font-size: 16px;
+    line-height: 20px;
+    color: black;
+}
+.atas .scrol .file1-3 .capt p span {
+    font-size: 12px;
+    color: rgba(0, 0, 0, .5);
+}
+.atas .scrol .file1-3 .capt .star {
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    margin-left: 62px;
+    background-image: url('../img/star.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+    display: none;
+}
+.atas .scrol .file1-3:hover .capt .star {
+    display: block;
+}
+.atas .scrol .file1-3 .capt .star:hover {
+    background-color: rgba(0, 0, 0, .05);
+}
+/* file figma 1-4 */
+.atas .scrol .file1-4 {
+    width: 360px;
+    height: 275px;
+    border-radius: 10px;
+    transition: .2s;
+    margin: 40px 0 0 10px;
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+.atas .scrol .file1-4:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2) ;
+}
+.atas .scrol .file1-4 .img {
+    width: 100%;
+    height: 210px;
+    background-image: url('../img/aflarc.png');
+    background-size: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.atas .scrol .file1-4 .capt {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top: 1px solid rgba(0, 0, 0, .05);
+}
+.atas .scrol .file1-4 .capt .bulet {
+    width: 30px;
+    height: 30px;
+    margin: 0 20px;
+    background-image: url('../img/new_design.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 3px 0;
+}
+.atas .scrol .file1-4 .capt p {
+    font-size: 16px;
+    line-height: 20px;
+    color: black;
+}
+.atas .scrol .file1-4 .capt p span {
+    font-size: 12px;
+    color: rgba(0, 0, 0, .5);
+}
+.atas .scrol .file1-4 .capt .star {
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    margin-left: 18px;
+    background-image: url('../img/star.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+    display: none;
+}
+.atas .scrol .file1-4:hover .capt .star {
+    display: block;
+}
+.atas .scrol .file1-4 .capt .star:hover {
+    background-color: rgba(0, 0, 0, .05);
+}
+/* file figma 1-5 */
+.atas .scrol .file1-5 {
+    width: 360px;
+    height: 275px;
+    border-radius: 10px;
+    transition: .2s;
+    margin: 40px 0 0 10px;
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+.atas .scrol .file1-5:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2) ;
+}
+.atas .scrol .file1-5 .img {
+    width: 100%;
+    height: 210px;
+    background-image: url('../img/Lean\ Canvas\ -\ Billionaire.png');
+    background-size: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.atas .scrol .file1-5 .capt {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top: 1px solid rgba(0, 0, 0, .05);
+}
+.atas .scrol .file1-5 .capt .bulet {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .2);
+    margin: 0 20px;
+    background-image: url('../img/triangle.png');
+    background-size: 12px;
+    background-repeat: no-repeat;
+    background-position: 9px 8px;
+    transform: rotate(90deg);
+}
+.atas .scrol .file1-5 .capt p {
+    font-size: 14px;
+    line-height: 20px;
+    color: black;
+}
+.atas .scrol .file1-5 .capt p span {
+    font-size: 12px;
+    color: rgba(0, 0, 0, .5);
+}
+.atas .scrol .file1-5 .capt .star {
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    margin-left: 7px;
+    background-image: url('../img/star.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+    display: none;
+}
+.atas .scrol .file1-5:hover .capt .star {
+    display: block;
+}
+.atas .scrol .file1-5 .capt .star:hover {
+    background-color: rgba(0, 0, 0, .05);
+}
+/* file figma 1-6 */
+.atas .scrol .file1-6 {
+    width: 360px;
+    height: 275px;
+    border-radius: 10px;
+    transition: .2s;
+    margin: 40px 0 0 10px;
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+.atas .scrol .file1-6:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2) ;
+}
+.atas .scrol .file1-6 .img {
+    width: 100%;
+    height: 210px;
+    background-image: url('../img/Lean\ Canvas\ -\ Billionaire.png');
+    background-size: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.atas .scrol .file1-6 .capt {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top: 1px solid rgba(0, 0, 0, .05);
+}
+.atas .scrol .file1-6 .capt .bulet {
+    width: 30px;
+    height: 30px;
+    margin: 0 20px;
+    background-image: url('../img/new_design.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 3px 0;
+}
+.atas .scrol .file1-6 .capt p {
+    font-size: 16px;
+    line-height: 20px;
+    color: black;
+}
+.atas .scrol .file1-6 .capt p span {
+    font-size: 12px;
+    color: rgba(0, 0, 0, .5);
+}
+.atas .scrol .file1-6 .capt .star {
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    margin-left: 37px;
+    background-image: url('../img/star.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+    display: none;
+}
+.atas .scrol .file1-6:hover .capt .star {
+    display: block;
+}
+.atas .scrol .file1-6 .capt .star:hover {
+    background-color: rgba(0, 0, 0, .05);
 }
 
 /* scroll-bar */
