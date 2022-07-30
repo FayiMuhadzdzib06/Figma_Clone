@@ -1,3 +1,12 @@
+// loader
+function myFunction() {
+    myVar = setTimeout(showPage, 2500);
+}
+function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("penampung").style.display = "block";
+}
+
 // Thirty
 function favoritefile() {
     document.getElementById('text').style.display = 'block';
