@@ -14,106 +14,51 @@ a {
 
 /* Loader */
 #loader {
-    width: 200px;
-    height: 200px;
-    border: 1px solid transparent;
-    position: relative;
-    margin: 220px auto 0;
+    width: 300px;
+    height: 150px;
+    margin: 275px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.coffee {
-    width: 80px;
-    height: 80px;
-    background-color: rgb(34, 34, 34);
-    margin: 100px auto 0;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+.bola {
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(326.78deg, #00B2FF 7.18%, #FFFFFF 106.04%);
+    border-radius: 50%;
+    margin-left: 5px;
 }
-.coffee::after {
-    content: '';
-    position: absolute;
-    top: 110px;
-    left: 100px;
-    width: 50px;
-    height: 40px;
-    border: 9px solid rgba(34, 34, 34, 1);
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 20px;
-    z-index: 9999;
+.bola1 {
+    animation: animasi 0.6s 0.3s linear infinite;
 }
-.asep {
-    width: 20px;
-    height: 20px;
-    border-radius: 3px;
-    background-color: rgba(0, 0, 0, .3);
-    position: absolute;
-    z-index: -9;
+.bola2 {
+    animation: animasi 0.6s 0.2s linear infinite;
 }
-.asep1 {
-    top: 140px;
-    left: 85px;
-    animation: animasi1 2.8s ease infinite;
+.bola3 {
+    animation: animasi 0.6s 0.1s linear infinite;
 }
-.asep2 {
-    top: 120px;
-    left: 110px;
-    animation: animasi2 2.5s ease infinite;
-}
-.asep3 {
-    top: 125px;
-    left: 65px;
-    animation: animasi3 2s ease infinite;
-}
-
-@keyframes animasi1 {
-    0% {
+@keyframes animasi {
+    0%{
         transform: translateY(0);
     }
-    70% {
-        background-color: rgba(0, 0, 0, .2);
+    50% {
+        transform: translateY(-50px);
     }
-    100%{
-        transform: translateY(-70px);
-        background-color: rgba(0, 0, 0, .0);
-    }
-}
-@keyframes animasi2 {
-    0% {
+    100% {
         transform: translateY(0);
     }
-    70% {
-        background-color: rgba(0, 0, 0, .2);
-    }
-    100%{
-        transform: translateY(-80px);
-        background-color: rgba(0, 0, 0, .0);
-    }
 }
-@keyframes animasi3 {
-    0% {
-        transform: translateY(0);
-    }
-    70% {
-        background-color: rgba(0, 0, 0, .2);
-    }
-    100%{
-        transform: translateY(-100px);
-        background-color: rgba(0, 0, 0, .0);
-    }
-}
-
 /* Navbar */
 .navbar {
     width: 100%;
-    height: 55px;
+    height: 48px;
     background-color: rgb(34, 34, 34);
     display: flex;
     align-items: center;
 }
 
 .navbar .one {
-    width: 270px;
+    width: 245px;
     height: 100%;
     border-right: 1px solid rgba(255, 255, 255, 0.1);
     display: flex;
@@ -121,15 +66,15 @@ a {
 }
 
 .navbar .one .fg {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     background-image: url('../img/figma.png');
     background-size: cover;
     margin: 0 15px;
 }
 
 .navbar .one p {
-    font-size: 13px;
+    font-size: 11px;
     font-weight: bold;
     color: rgb(228, 228, 228);
     letter-spacing: 0.5px;
@@ -137,14 +82,14 @@ a {
 
 .navbar .one p span {
     font-weight: 100;
-    font-size: 10px;
+    font-size: 9px;
     color: rgba(255, 255, 255, 0.5);
 }
 
 .navbar .one .arro {
     width: 9px;
     height: 9px;
-    margin-left: 50px;
+    margin-left: 40px;
     background-image: url('../img/arrow-down.png');
     background-size: cover;
     transition: .5s;
@@ -167,11 +112,11 @@ a {
 }
 
 .navbar .isi {
-    width: 285px;
-    height: 190px;
+    width: 255px;
+    height: 150px;
     background-color: rgb(34, 34, 34);
     position: absolute;
-    top: 66px;
+    top: 57px;
     left: 10px;
     border-radius: 2px;
     display: none;
@@ -185,41 +130,42 @@ a {
     transform: rotate(-135deg);
     background-color: rgb(34, 34, 34);
     position: absolute;
-    top: -6px;
-    left: 225px;
+    top: -5px;
+    left: 200px;
 }
 
 .navbar .isi h5 {
-    font-size: 13px;
+    font-size: 10px;
     width: 100%;
     height: 40px;
     color: rgba(255, 255, 255, 0.5);
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     padding-left: 20px;
-    margin-bottom: 15px;
+    margin-top: 5px;
     letter-spacing: 1px;
 }
 
 .navbar .isi a .kesatu {
     width: 100%;
-    height: 50px;
+    height: 40px;
     background-color: rgb(0, 174, 255);
-    margin: 10px 0;
+    margin: 0 0 7px 0;
     display: flex;
     align-items: center;
 }
 
 .navbar .isi a .kesatu .circle {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     background-color: rgb(0, 140, 255);
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 50%;
-    margin: 0 10px;
+    margin: 0 15px 0 15px;
     text-align: center;
-    line-height: 30px;
-    color: rgba(255, 255, 255, 0.8);
+    line-height: 24px;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 1);
 }
 
 .navbar .isi a .kesatu p {
@@ -232,7 +178,7 @@ a {
     height: 13px;
     background-image: url('../img/tick.png');
     background-size: cover;
-    margin-left: 60px;
+    margin-left: 65px;
 }
 
 .navbar .isi hr {
@@ -241,8 +187,8 @@ a {
 
 .navbar .isi a .kedua {
     width: 100%;
-    height: 50px;
-    margin: 10px 0;
+    height: 40px;
+    margin: 7px 0 10px 0;
     color: rgb(228, 228, 228);
     font-weight: bold;
     display: flex;
@@ -255,22 +201,23 @@ a {
 }
 
 .navbar .isi a .kedua .global {
-    width: 26px;
-    height: 26px;
+    width: 25px;
+    height: 25px;
     background-image: url('../img/web-white.png');
-    background-size: cover;
-    margin: 0 10px;
+    background-size: 23px;
+    background-repeat: no-repeat;
+    margin: 0 14px 0 17px;
 }
 
 .navbar .isi a .kedua p {
     padding-top: 3px;
-    font-size: 14px;
+    font-size: 10px;
     color: rgb(253, 253, 253);
 }
 
 .navbar .isi a .kedua p span {
     padding-left: 20px;
-    font-size: 11px;
+    font-size: 9px;
     color: rgba(255, 255, 255, 0.5);
 }
 
@@ -281,7 +228,7 @@ a {
 /* two */
 .navbar .two {
     width: 400px;
-    height: 45px;
+    height: 40px;
     background-color: rgba(255, 255, 255, 0.1);
     margin-left: 20px;
     border-radius: 5px;
@@ -292,30 +239,23 @@ a {
 .navbar .two:hover {
     background-color: rgba(255, 255, 255, 0.15);
 }
-
-.navbar .two .search {
-    width: 20px;
-    height: 20px;
-    background-image: url('../img/search.png');
-    background-size: cover;
+.navbar .two img {
+    width: 18px;
+    height: 18px;
     margin-left: 20px;
 }
-
-.navbar .two form input {
-    position: relative;
-    margin-left: 15px;
-    top: -11px;
+.navbar .two input {
     padding: 20px;
     width: 350px;
     height: 40px;
-    border: none;
     background-color: transparent;
+    border: none;
     outline: none;
 }
 
 ::placeholder {
     font-weight: bold;
-    font-size: 14px;
+    font-size: 12px;
     letter-spacing: 0.16px;
 }
 
@@ -327,7 +267,7 @@ a {
 .navbar .three {
     width: 55px;
     height: 100%;
-    margin-left: 650px;
+    margin-left: 550px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -353,8 +293,8 @@ a {
 }
 
 .navbar .four .akun {
-    width: 32px;
-    height: 32px;
+    width: 27px;
+    height: 27px;
     background-color: rgb(0, 140, 255);
     border-radius: 50%;
     border: 1px solid rgba(255, 255, 255, 0.5);
@@ -362,13 +302,13 @@ a {
     align-items: center;
     justify-content: center;
     color: #fff;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 .navbar .four .arrow-down {
     width: 9px;
     height: 9px;
-    margin-left: 25px;
+    margin-left: 18px;
     background-image: url('../img/arrow-down.png');
     background-size: cover;
     transition: .5s;
@@ -383,12 +323,12 @@ a {
 }
 
 .navbar .four .setting-menu {
-    width: 280px;
-    height: 423px;
+    width: 250px;
+    height: 370px;
     background-color: rgb(34, 34, 34);
     position: absolute;
-    top: 65px;
-    right: 10px;
+    top: 55px;
+    right: 5px;
     border-radius: 3px;
     display: none;
 }
@@ -401,8 +341,8 @@ a {
     transform: rotate(-135deg);
     background-color: rgb(34, 34, 34);
     position: absolute;
-    top: -4px;
-    left: 234px;
+    top: -5px;
+    left: 219px;
 }
 
 .navbar .four:hover .setting-menu {
@@ -411,14 +351,14 @@ a {
 
 .navbar .four .setting-menu .gmail {
     width: 100%;
-    height: 70px;
+    height: 60px;
     display: flex;
     align-items: center;
 }
 
 .navbar .four .setting-menu .gmail .ft {
     width: 45px;
-    height: 35px;
+    height: 32px;
     background-color: rgb(0, 140, 255);
     border-radius: 50%;
     border: 1px solid rgba(255, 255, 255, 0.5);
@@ -431,12 +371,12 @@ a {
 
 .navbar .four .setting-menu .gmail h4 {
     color: rgb(253, 253, 253);
-    font-size: 12px;
+    font-size: 11px;
     line-height: 23px;
 }
 
 .navbar .four .setting-menu .gmail h4 span {
-    font-size: 11px;
+    font-size: 10px;
     color: rgba(255, 255, 255, 0.5);
 }
 
@@ -450,14 +390,14 @@ a {
 
 .navbar .four .setting-menu .bung1 {
     width: 100%;
-    height: 40px;
+    height: 35px;
     display: flex;
     align-items: center;
 }
 
 .navbar .four .setting-menu .bung1 .cp {
-    width: 25px;
-    height: 25px;
+    width: 23px;
+    height: 23px;
     background-image: url('../img/web-white.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -467,7 +407,7 @@ a {
 .navbar .four .setting-menu .bung1 p {
     color: #fff;
     padding-left: 2px;
-    font-size: 13px;
+    font-size: 11px;
 }
 
 .navbar .four .setting-menu .bung2:hover {
@@ -476,7 +416,7 @@ a {
 
 .navbar .four .setting-menu .bung2 {
     width: 100%;
-    height: 40px;
+    height: 35px;
     display: flex;
     align-items: center;
 }
@@ -485,15 +425,15 @@ a {
     width: 23px;
     height: 23px;
     background-image: url('../img/user.png');
-    background-size: 23px;
+    background-size: 22px;
     background-repeat: no-repeat;
-    margin: 0 26px;
+    margin: 0 25px;
 }
 
 .navbar .four .setting-menu .bung2 p {
     color: #fff;
     padding-left: 2px;
-    font-size: 13px;
+    font-size: 11px;
 }
 
 .navbar .four .setting-menu .bung3:hover {
@@ -502,16 +442,17 @@ a {
 
 .navbar .four .setting-menu .bung3 {
     width: 100%;
-    height: 40px;
+    height: 35px;
     display: flex;
     align-items: center;
 }
 
 .navbar .four .setting-menu .bung3 .cp {
-    width: 25px;
-    height: 25px;
+    width: 23px;
+    height: 23px;
     background-image: url('../img/puzzle.png');
-    background-size: 25px;
+    background-size: 23px;
+    background-position: 1px 0;
     margin: 0 25px;
     transform: rotate(180deg);
 }
@@ -519,7 +460,7 @@ a {
 .navbar .four .setting-menu .bung3 p {
     color: #fff;
     padding-left: 2px;
-    font-size: 13px;
+    font-size: 11px;
 }
 
 .navbar .four .setting-menu .bung4:hover {
@@ -528,14 +469,14 @@ a {
 
 .navbar .four .setting-menu .bung4 {
     width: 100%;
-    height: 40px;
+    height: 35px;
     display: flex;
     align-items: center;
 }
 
 .navbar .four .setting-menu .bung4 .cp {
-    width: 21px;
-    height: 21px;
+    width: 18px;
+    height: 18px;
     background-image: url('../img/control.png');
     background-size: cover;
     margin: 0 27px;
@@ -545,7 +486,7 @@ a {
 .navbar .four .setting-menu .bung4 p {
     color: #fff;
     padding-left: 2px;
-    font-size: 13px;
+    font-size: 11px;
 }
 
 .navbar .four .setting-menu .bung5:hover {
@@ -554,14 +495,14 @@ a {
 
 .navbar .four .setting-menu .bung5 {
     width: 100%;
-    height: 40px;
+    height: 35px;
     display: flex;
     align-items: center;
 }
 
 .navbar .four .setting-menu .bung5 .cp {
-    width: 31px;
-    height: 31px;
+    width: 28px;
+    height: 28px;
     background-image: url('../img/theme.png');
     background-size: cover;
     margin: 0 22px;
@@ -570,7 +511,7 @@ a {
 .navbar .four .setting-menu .bung5 p {
     color: #fff;
     padding-left: 2px;
-    font-size: 13px;
+    font-size: 11px;
 }
 
 .navbar .four .setting-menu .bung5 .pb {
@@ -578,7 +519,7 @@ a {
     height: 10px;
     background-image: url('../img/arrow-down.png');
     background-size: cover;
-    margin-left: 110px;
+    margin-left: 105px;
     transform: rotate(-90deg);
     transition: .5s;
 }
@@ -588,12 +529,12 @@ a {
 }
 
 .navbar .four .setting-menu .bung5 .tema-menu {
-    width: 200px;
+    width: 170px;
     height: 110px;
     background-color: rgb(34, 34, 34);
     position: absolute;
-    right: 281px;
-    top: 220px;
+    right: 255px;
+    top: 190px;
     border-radius: 3px;
     display: none;
 }
@@ -619,7 +560,7 @@ a {
     height: 10px;
     background-image: url('../img/tick.png');
     background-size: cover;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 .navbar .four .setting-menu .bung5 .tema-menu .dark {
@@ -627,7 +568,7 @@ a {
     height: 30px;
     display: flex;
     align-items: center;
-    padding-left: 30px;
+    padding-left: 40px;
 }
 
 .navbar .four .setting-menu .bung5 .tema-menu .dark:hover {
@@ -639,7 +580,7 @@ a {
     height: 30px;
     display: flex;
     align-items: center;
-    padding-left: 30px;
+    padding-left: 40px;
 }
 
 .navbar .four .setting-menu .bung5 .tema-menu .system:hover {
@@ -652,7 +593,7 @@ a {
 
 .navbar .four .setting-menu .bung6 {
     width: 100%;
-    height: 40px;
+    height: 35px;
     display: flex;
     align-items: center;
     margin-bottom: 10px;
@@ -663,13 +604,13 @@ a {
     height: 21px;
     background-image: url('../img/download.png');
     background-size: cover;
-    margin: 0 27px;
+    margin: 0 26px;
 }
 
 .navbar .four .setting-menu .bung6 p {
     color: #fff;
     padding-left: 2px;
-    font-size: 13px;
+    font-size: 11px;
 }
 
 .navbar .four .setting-menu hr {
@@ -682,15 +623,15 @@ a {
 
 .navbar .four .setting-menu .bung7 {
     width: 100%;
-    height: 40px;
+    height: 35px;
     display: flex;
     align-items: center;
     margin-top: 10px;
 }
 
 .navbar .four .setting-menu .bung7 .cp {
-    width: 17px;
-    height: 17px;
+    width: 15px;
+    height: 15px;
     background-image: url('../img/plus.png');
     background-size: cover;
     margin: 0 30px;
@@ -699,7 +640,7 @@ a {
 .navbar .four .setting-menu .bung7 p {
     color: #fff;
     padding-left: 2px;
-    font-size: 13px;
+    font-size: 11px;
 }
 
 .navbar .four .setting-menu .bung8:hover {
@@ -708,36 +649,36 @@ a {
 
 .navbar .four .setting-menu .bung8 {
     width: 100%;
-    height: 40px;
+    height: 35px;
     display: flex;
     align-items: center;
 }
 
 .navbar .four .setting-menu .bung8 .cp {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     background-image: url('../img/exit.png');
     background-size: cover;
-    margin: 0 30px;
+    margin: 0 27px 0 31px;
 }
 
 .navbar .four .setting-menu .bung8 p {
     color: #fff;
     padding-left: 2px;
-    font-size: 13px;
+    font-size: 11px;
 }
 
 /* Container */
 .container {
     width: 100%;
-    height: 666px;
+    height: 600px;
     display: flex;
 }
 
 /* sidebar */
 .side-bar {
-    width: 330px;
-    height: 665px;
+    width: 245px;
+    height: 600px;
     border-right: 1px solid rgba(0, 0, 0, .1);
     display: flex;
     flex-direction: column;
@@ -760,15 +701,15 @@ a {
 }
 
 .side-bar .first .recents .jam {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     background-image: url('../img/jam.png');
     background-size: cover;
-    margin: 0 20px;
+    margin: 0 16px 0 16px;
 }
 
 .side-bar .first .recents p {
-    font-size: 13px;
+    font-size: 11px;
 }
 
 /* draft */
@@ -784,25 +725,25 @@ a {
 }
 
 .side-bar .first .drafts .kertas {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     background-image: url('../img/file.png');
     background-size: cover;
-    margin: 0 20px;
+    margin: 0 16px 0 16px;
 }
 
 .side-bar .first .drafts p {
-    font-size: 13px;
+    font-size: 11px;
 }
 
 .side-bar .first .drafts .tambah {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     background-image: url('../img/add.png');
     background-size: 13px;
     background-repeat: no-repeat;
-    background-position: 10px 10px;
-    margin-left: 120px;
+    background-position: 9px 9px;
+    margin-left: 110px;
     display: none;
 }
 
@@ -827,24 +768,24 @@ a {
 }
 
 .side-bar .first .comunitas .logo {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     background-image: url('../img/web.png');
     background-size: cover;
-    margin: 0 20px;
+    margin: 0 16px 0 16px;
 }
 
 .side-bar .first .comunitas p {
-    font-size: 13px;
+    font-size: 11px;
     color: black;
 }
 
 .side-bar .first .comunitas .right-arrow {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     background-image: url('../img/right-arrow.png');
     background-size: cover;
-    margin-left: 89px;
+    margin-left: 85px;
     transition: .5s;
 }
 
@@ -853,30 +794,30 @@ a {
 }
 
 .side-bar hr {
-    width: 240px;
-    border: 1px solid rgba(0, 0, 0, .1);
-    margin-left: 15px;
+    width: 200px;
+    border: 1px solid rgba(0, 0, 0, .05);
+    margin-left: 20px;
 }
 
 /* side-bar > second */
 .side-bar .second {
     width: 100%;
-    height: 140px;
+    height: 120px;
     display: flex;
 }
 
 .side-bar .second .up-arrow {
-    width: 50px;
+    width: 49px;
     height: 100%;
     background-image: url('../img/up-arrow.png');
-    background-size: 20px;
+    background-size: 15px;
     background-repeat: no-repeat;
-    background-position: 20px 28px;
+    background-position: 17px 20px;
 }
 
 .side-bar .second .right p {
-    padding: 32px 0 0 8px;
-    font-size: 13px;
+    padding: 20px 0 0 0;
+    font-size: 11px;
     letter-spacing: 0.56px;
     line-height: 17px;
 }
@@ -886,7 +827,8 @@ a {
     height: 35px;
     border-radius: 5px;
     background-color: transparent;
-    margin: 15px 0 0 10px;
+    margin: 10px 0 0 0;
+    font-size: 11px;
 }
 
 .side-bar .second .template {
@@ -905,7 +847,7 @@ a {
     background-color: #fff;
     border-radius: 5px;
     overflow-y: scroll;
-    margin: 80px auto;
+    margin: 50px auto;
 }
 
 .side-bar .second .template .harga a .tombol-hilang {
@@ -926,7 +868,7 @@ a {
 
 .side-bar .second .template .harga h2 {
     text-align: center;
-    font-size: 28px;
+    font-size: 25px;
 }
 
 .side-bar .second .template .harga .tatakan {
@@ -950,9 +892,9 @@ a {
 }
 
 .side-bar .second .template .harga .tatakan .professional .capt {
-    font-size: 12px;
+    font-size: 11px;
     color: rgba(0, 0, 0, .5);
-    margin: -20px 0 0 10px;
+    margin: -20px 0 0 17px;
 }
 
 .side-bar .second .template .harga .tatakan .professional .harga-figsign {
@@ -965,7 +907,7 @@ a {
 
 .side-bar .second .template .harga .tatakan .professional .harga-figsign h5 {
     padding-left: 18px;
-    font-size: 12px;
+    font-size: 11px;
     color: rgba(0, 0, 0, .7);
 }
 
@@ -984,7 +926,7 @@ a {
 
 .side-bar .second .template .harga .tatakan .professional .harga-figjam h5 {
     padding-left: 18px;
-    font-size: 12px;
+    font-size: 11px;
     color: rgba(0, 0, 0, .7);
 }
 
@@ -1036,13 +978,14 @@ a {
 }
 
 .side-bar .second .template .harga .tatakan .professional ul li .all-li p {
-    margin-top: -30px;
-    font-size: 12px;
+    margin-top: -20px;
+    margin-left: 10px;
+    font-size: 11px;
 }
 
 .side-bar .second .template .harga .tatakan .professional a .see-all {
     width: 120px;
-    margin-left: 41px;
+    margin-left: 42px;
     height: 20px;
     display: flex;
     align-items: center;
@@ -1074,9 +1017,9 @@ a {
 }
 
 .side-bar .second .template .harga .tatakan .organization .capt {
-    font-size: 12px;
+    font-size: 11px;
     color: rgba(0, 0, 0, .5);
-    margin: -20px 0 0 10px;
+    margin: -20px 0 0 19px;
 }
 
 .side-bar .second .template .harga .tatakan .organization .harga-figsign {
@@ -1088,8 +1031,8 @@ a {
 }
 
 .side-bar .second .template .harga .tatakan .organization .harga-figsign h5 {
-    padding-left: 18px;
-    font-size: 12px;
+    padding-left: 19px;
+    font-size: 11px;
     color: rgba(0, 0, 0, .7);
 }
 
@@ -1107,8 +1050,8 @@ a {
 }
 
 .side-bar .second .template .harga .tatakan .organization .harga-figjam h5 {
-    padding-left: 18px;
-    font-size: 12px;
+    padding-left: 19px;
+    font-size: 11px;
     color: rgba(0, 0, 0, .7);
 }
 
@@ -1135,7 +1078,7 @@ a {
 }
 
 .side-bar .second .template .harga .tatakan .organization .cs span {
-    font-size: 12px;
+    font-size: 11px;
     padding-left: 19px;
     color: rgba(0, 0, 0, .7);
 }
@@ -1167,7 +1110,7 @@ a {
 }
 
 .side-bar .second .template .harga .tatakan .organization .eipp span {
-    font-size: 12px;
+    font-size: 11px;
     color: rgba(0, 0, 0, .7);
 }
 
@@ -1200,13 +1143,14 @@ a {
 }
 
 .side-bar .second .template .harga .tatakan .organization ul li .all-li p {
-    margin-top: -30px;
-    font-size: 12px;
+    margin-top: -20px;
+    margin-left: 13px;
+    font-size: 11px;
 }
 
 .side-bar .second .template .harga .tatakan .organization a .see-all {
     width: 120px;
-    margin-left: 41px;
+    margin-left: 45px;
     height: 20px;
     display: flex;
     align-items: center;
@@ -1235,15 +1179,15 @@ a {
 }
 
 .side-bar .thirty .triangle {
-    width: 35px;
-    height: 35px;
+    width: 33px;
+    height: 33px;
     background-image: url('../img/triangle.png');
-    background-size: 8px;
+    background-size: 7px;
     background-repeat: no-repeat;
-    background-position: 14px 13px;
+    background-position: 13px 13px;
     transform: rotate(90deg);
     border-radius: 5px;
-    margin: 0 10px 0 15px;
+    margin: 0 10px 0 10px;
 }
 
 .side-bar .thirty .triangle:hover {
@@ -1253,9 +1197,9 @@ a {
 .side-bar .thirty .trans {
     content: '';
     position: absolute;
-    left: 15px;
-    width: 35px;
-    height: 35px;
+    left: 10px;
+    width: 33px;
+    height: 33px;
     border-radius: 5px;
     background-color: transparent;
     display: none;
@@ -1266,7 +1210,7 @@ a {
 }
 
 .side-bar .thirty span {
-    font-size: 13px;
+    font-size: 11px;
     letter-spacing: 0.56px;
 }
 
@@ -1278,7 +1222,7 @@ a {
 }
 
 .side-bar .text p {
-    font-size: 12px;
+    font-size: 11px;
     padding-left: 15px;
     color: rgba(0, 0, 0, .5);
 }
@@ -1293,15 +1237,15 @@ a {
 }
 
 .side-bar .fourty .triangle {
-    width: 35px;
-    height: 35px;
+    width: 33px;
+    height: 33px;
     background-image: url('../img/triangle.png');
-    background-size: 8px;
+    background-size: 7px;
     background-repeat: no-repeat;
-    background-position: 14px 13px;
+    background-position: 13px 13px;
     transform: rotate(90deg);
     border-radius: 5px;
-    margin: 0 10px 0 15px;
+    margin: 0 10px 0 10px;
 }
 
 .side-bar .fourty .triangle:hover {
@@ -1311,9 +1255,9 @@ a {
 .side-bar .fourty .trans {
     content: '';
     position: absolute;
-    left: 15px;
-    width: 35px;
-    height: 35px;
+    left: 10px;
+    width: 33px;
+    height: 33px;
     border-radius: 5px;
     background-color: transparent;
     display: none;
@@ -1324,7 +1268,7 @@ a {
 }
 
 .side-bar .fourty span {
-    font-size: 13px;
+    font-size: 11px;
     letter-spacing: 0.56px;
 }
 
@@ -1347,15 +1291,15 @@ a {
 }
 
 .side-bar .isi-teams .user-team .kuning {
-    width: 17px;
-    height: 17px;
+    width: 15px;
+    height: 15px;
     background-color: rgb(255, 238, 0);
     border-radius: 2px;
-    margin: 0 20px 0 22px;
+    margin: 0 19px 0 18px;
 }
 
 .side-bar .isi-teams .user-team span {
-    font-size: 12px;
+    font-size: 11px;
     color: black;
 }
 
@@ -1391,9 +1335,9 @@ a {
 }
 
 .side-bar .isi-teams .team-project span {
-    font-size: 12px;
+    font-size: 11px;
     color: black;
-    padding-left: 58px;
+    padding-left: 54px;
 }
 
 .side-bar .isi-teams .team-project .tambah-team {
@@ -1403,7 +1347,7 @@ a {
     background-size: 13px;
     background-position: 10.27px 10px;
     background-repeat: no-repeat;
-    margin-left: 85px;
+    margin-left: 75px;
     display: none;
 }
 
@@ -1428,23 +1372,23 @@ a {
 }
 
 .side-bar .isi-teams .cnt .tambah-cnt {
-    width: 17px;
-    height: 17px;
+    width: 15px;
+    height: 15px;
     background-image: url('../img/add.png');
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 0 19px 0 22px;
+    margin: 0 19px 0 20px;
 }
 
 .side-bar .isi-teams .cnt span {
-    font-size: 12px;
+    font-size: 11px;
     letter-spacing: 0;
     color: black;
 }
 
 /* samping navbar */
 .bungkus {
-    width: 100%;
+    width: calc(100% - 245px);
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -1462,8 +1406,8 @@ a {
     border-bottom: 1px solid rgba(0, 0, 0, .1);
     display: flex;
     align-items: center;
-    padding-left: 41px;
-    font-size: 15px;
+    padding-left: 34px;
+    font-size: 13px;
 }
 
 .atas .new {
@@ -1475,8 +1419,8 @@ a {
 }
 
 .atas .new .new-design {
-    width: 360px;
-    height: 80px;
+    width: 330px;
+    height: 70px;
     border: 1px solid rgba(0, 0, 0, .1);
     border-radius: 5px;
     display: flex;
@@ -1484,8 +1428,8 @@ a {
 }
 
 .atas .new .new-design .icon {
-    width: 33px;
-    height: 33px;
+    width: 31px;
+    height: 31px;
     background-image: url('../img/new_design.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -1493,7 +1437,7 @@ a {
 }
 
 .atas .new .new-design p {
-    font-size: 14px;
+    font-size: 12px;
     padding-left: 10px;
     letter-spacing: 0.7px;
     line-height: 23px;
@@ -1501,7 +1445,7 @@ a {
 }
 
 .atas .new .new-design p span {
-    font-size: 12px;
+    font-size: 11px;
     color: rgba(0, 0, 0, .5);
 }
 
@@ -1510,7 +1454,7 @@ a {
     height: 18px;
     background-image: url('../img/add.png');
     background-size: cover;
-    margin-left: 100px;
+    margin-left: 90px;
 }
 
 .atas .new .new-design:hover {
@@ -1518,8 +1462,8 @@ a {
 }
 
 .atas .new .new-figjam {
-    width: 360px;
-    height: 80px;
+    width: 330px;
+    height: 70px;
     border: 1px solid rgba(0, 0, 0, .1);
     border-radius: 5px;
     display: flex;
@@ -1527,8 +1471,8 @@ a {
 }
 
 .atas .new .new-figjam .icon {
-    width: 33px;
-    height: 33px;
+    width: 31px;
+    height: 31px;
     background-image: url('../img/new_figjam.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -1536,7 +1480,7 @@ a {
 }
 
 .atas .new .new-figjam p {
-    font-size: 14px;
+    font-size: 12px;
     padding-left: 10px;
     letter-spacing: 0.7px;
     line-height: 23px;
@@ -1544,7 +1488,7 @@ a {
 }
 
 .atas .new .new-figjam p span {
-    font-size: 12px;
+    font-size: 11px;
     color: rgba(0, 0, 0, .5);
 }
 
@@ -1553,7 +1497,7 @@ a {
     height: 18px;
     background-image: url('../img/add.png');
     background-size: cover;
-    margin-left: 85px;
+    margin-left: 75px;
 }
 
 .atas .new .new-figjam:hover {
@@ -1561,8 +1505,8 @@ a {
 }
 
 .atas .new .import {
-    width: 360px;
-    height: 80px;
+    width: 330px;
+    height: 70px;
     border: 1px solid rgba(0, 0, 0, .1);
     border-radius: 5px;
     display: flex;
@@ -1570,8 +1514,8 @@ a {
 }
 
 .atas .new .import .icon {
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
     background-image: url('../img/import.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -1580,7 +1524,7 @@ a {
 }
 
 .atas .new .import p {
-    font-size: 14px;
+    font-size: 12px;
     padding-left: 15px;
     letter-spacing: 0.7px;
     line-height: 23px;
@@ -1588,7 +1532,7 @@ a {
 }
 
 .atas .new .import p span {
-    font-size: 12px;
+    font-size: 11px;
     color: rgba(0, 0, 0, .5);
 }
 
@@ -1599,7 +1543,7 @@ a {
 /* scrol */
 .atas .scrol {
     width: 100%;
-    height: 481px;
+    height: 415px;
     overflow-y: scroll;
 }
 
@@ -1613,7 +1557,7 @@ a {
 .atas .scrol .bar-scrol p {
     font-size: 12px;
     color: rgba(0, 0, 0, .5);
-    padding-left: 44px;
+    padding-left: 33px;
 }
 
 .atas .scrol .bar-scrol .allfiles {
@@ -1625,7 +1569,7 @@ a {
 }
 
 .atas .scrol .bar-scrol .allfiles span {
-    font-size: 12px;
+    font-size: 11px;
 }
 
 .atas .scrol .bar-scrol .allfiles .logo {
@@ -1646,7 +1590,7 @@ a {
 .atas .scrol .bar-scrol .allfiles .isi-af {
     position: absolute;
     width: 200px;
-    height: 120px;
+    height: 115px;
     background-color: rgb(34, 34, 34);
     margin-top: 145px;
     border-radius: 3px;
@@ -1660,7 +1604,7 @@ a {
 .atas .scrol .bar-scrol .allfiles .isi-af .af {
     width: 100%;
     height: 25px;
-    margin-top: 10px;
+    margin-top: 7px;
     display: flex;
     align-items: center;
 }
@@ -1731,7 +1675,7 @@ a {
 
 /* sort */
 .atas .scrol .bar-scrol .sort {
-    padding-left: 855px;
+    padding-left: 745px;
     font-size: 12px;
 }
 
@@ -1744,7 +1688,7 @@ a {
 }
 
 .atas .scrol .bar-scrol .lastviewed span {
-    font-size: 12px;
+    font-size: 11px;
 }
 
 .atas .scrol .bar-scrol .lastviewed .logo {
@@ -1905,7 +1849,7 @@ a {
     width: 26px;
     height: 26px;
     border-radius: 2px;
-    margin-left: 10px;
+    margin-left: 0px;
     background-color: rgba(0, 0, 0, .05);
     background-image: url('../img/menu.png');
     background-size: 14px;
@@ -1940,8 +1884,8 @@ a {
 
 /* file figma 1-1 */
 .atas .scrol .file1-1 {
-    width: 360px;
-    height: 275px;
+    width: 330px;
+    height: 255px;
     border-radius: 10px;
     transition: .2s;
     margin: 15px 0 0 10px;
@@ -1954,7 +1898,7 @@ a {
 
 .atas .scrol .file1-1 .img {
     width: 100%;
-    height: 210px;
+    height: 190px;
     background-image: url('../img/plaweb-watch.png');
     background-size: cover;
     border-top-left-radius: 5px;
@@ -1963,7 +1907,7 @@ a {
 
 .atas .scrol .file1-1 .capt {
     width: 100%;
-    height: 65px;
+    height: calc(100% - 190px);
     display: flex;
     align-items: center;
     border-bottom-left-radius: 10px;
@@ -1971,20 +1915,20 @@ a {
 }
 
 .atas .scrol .file1-1 .capt .bulet {
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
     border-radius: 50%;
     background-color: rgba(0, 0, 0, .2);
     margin: 0 20px;
     background-image: url('../img/triangle.png');
-    background-size: 12px;
+    background-size: 10px;
     background-repeat: no-repeat;
     background-position: 9px 8px;
     transform: rotate(90deg);
 }
 
 .atas .scrol .file1-1 .capt p {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 20px;
     color: black;
 }
@@ -1998,7 +1942,7 @@ a {
     width: 40px;
     height: 40px;
     border-radius: 3px;
-    margin-left: 110px;
+    margin-left: 100px;
     background-image: url('../img/star.png');
     background-size: 20px;
     background-repeat: no-repeat;
@@ -2016,8 +1960,8 @@ a {
 
 /* file figma 1-2 */
 .atas .scrol .file1-2 {
-    width: 360px;
-    height: 275px;
+    width: 330px;
+    height: 255px;
     border-radius: 10px;
     transition: .2s;
     margin: 15px 0 0 10px;
@@ -2030,7 +1974,7 @@ a {
 
 .atas .scrol .file1-2 .img {
     width: 100%;
-    height: 210px;
+    height: 190px;
     background-image: url('../img/plaweb-watch.png');
     background-size: cover;
     border-top-left-radius: 5px;
@@ -2039,7 +1983,7 @@ a {
 
 .atas .scrol .file1-2 .capt {
     width: 100%;
-    height: 65px;
+    height: calc(100% - 190px);
     display: flex;
     align-items: center;
     border-bottom-left-radius: 10px;
@@ -2047,8 +1991,8 @@ a {
 }
 
 .atas .scrol .file1-2 .capt .bulet {
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
     margin: 0 20px;
     background-image: url('../img/new_design.png');
     background-size: contain;
@@ -2057,7 +2001,7 @@ a {
 }
 
 .atas .scrol .file1-2 .capt p {
-    font-size: 16px;
+    font-size: 13px;
     line-height: 20px;
     color: black;
 }
@@ -2071,7 +2015,7 @@ a {
     width: 40px;
     height: 40px;
     border-radius: 3px;
-    margin-left: 65px;
+    margin-left: 40px;
     background-image: url('../img/star.png');
     background-size: 20px;
     background-repeat: no-repeat;
@@ -2089,8 +2033,8 @@ a {
 
 /* file figma 1-3 */
 .atas .scrol .file1-3 {
-    width: 360px;
-    height: 275px;
+    width: 330px;
+    height: 255px;
     border-radius: 10px;
     transition: .2s;
     margin: 15px 0 0 10px;
@@ -2103,7 +2047,7 @@ a {
 
 .atas .scrol .file1-3 .img {
     width: 100%;
-    height: 210px;
+    height: 190px;
     background-image: url('../img/aflarc.png');
     background-size: cover;
     border-top-left-radius: 5px;
@@ -2112,7 +2056,7 @@ a {
 
 .atas .scrol .file1-3 .capt {
     width: 100%;
-    height: 65px;
+    height: calc(100% - 190px);
     display: flex;
     align-items: center;
     border-bottom-left-radius: 10px;
@@ -2121,20 +2065,20 @@ a {
 }
 
 .atas .scrol .file1-3 .capt .bulet {
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
     border-radius: 50%;
     background-color: rgba(0, 0, 0, .2);
     margin: 0 20px;
     background-image: url('../img/triangle.png');
-    background-size: 12px;
+    background-size: 10px;
     background-repeat: no-repeat;
     background-position: 9px 8px;
     transform: rotate(90deg);
 }
 
 .atas .scrol .file1-3 .capt p {
-    font-size: 16px;
+    font-size: 12px;
     line-height: 20px;
     color: black;
 }
@@ -2166,8 +2110,8 @@ a {
 
 /* file figma 1-4 */
 .atas .scrol .file1-4 {
-    width: 360px;
-    height: 275px;
+    width: 330px;
+    height: 255px;
     border-radius: 10px;
     transition: .2s;
     margin: 40px 0 0 10px;
@@ -2180,7 +2124,7 @@ a {
 
 .atas .scrol .file1-4 .img {
     width: 100%;
-    height: 210px;
+    height: 190px;
     background-image: url('../img/aflarc.png');
     background-size: cover;
     border-top-left-radius: 5px;
@@ -2189,7 +2133,7 @@ a {
 
 .atas .scrol .file1-4 .capt {
     width: 100%;
-    height: 65px;
+    height: calc(100% - 190px);
     display: flex;
     align-items: center;
     border-bottom-left-radius: 10px;
@@ -2208,13 +2152,13 @@ a {
 }
 
 .atas .scrol .file1-4 .capt p {
-    font-size: 16px;
+    font-size: 13px;
     line-height: 20px;
     color: black;
 }
 
 .atas .scrol .file1-4 .capt p span {
-    font-size: 12px;
+    font-size: 11px;
     color: rgba(0, 0, 0, .5);
 }
 
@@ -2222,7 +2166,7 @@ a {
     width: 40px;
     height: 40px;
     border-radius: 3px;
-    margin-left: 18px;
+    margin-left: 8px;
     background-image: url('../img/star.png');
     background-size: 20px;
     background-repeat: no-repeat;
@@ -2240,8 +2184,8 @@ a {
 
 /* file figma 1-5 */
 .atas .scrol .file1-5 {
-    width: 360px;
-    height: 275px;
+    width: 330px;
+    height: 255px;
     border-radius: 10px;
     transition: .2s;
     margin: 40px 0 0 10px;
@@ -2254,7 +2198,7 @@ a {
 
 .atas .scrol .file1-5 .img {
     width: 100%;
-    height: 210px;
+    height: 190px;
     background-image: url('../img/Lean\ Canvas\ -\ Billionaire.png');
     background-size: cover;
     border-top-left-radius: 5px;
@@ -2263,7 +2207,7 @@ a {
 
 .atas .scrol .file1-5 .capt {
     width: 100%;
-    height: 65px;
+    height: calc(100% - 190px);
     display: flex;
     align-items: center;
     border-bottom-left-radius: 10px;
@@ -2278,20 +2222,20 @@ a {
     background-color: rgba(0, 0, 0, .2);
     margin: 0 20px;
     background-image: url('../img/triangle.png');
-    background-size: 12px;
+    background-size: 10px;
     background-repeat: no-repeat;
-    background-position: 9px 8px;
+    background-position: 10px 9px;
     transform: rotate(90deg);
 }
 
 .atas .scrol .file1-5 .capt p {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 20px;
     color: black;
 }
 
 .atas .scrol .file1-5 .capt p span {
-    font-size: 12px;
+    font-size: 11px;
     color: rgba(0, 0, 0, .5);
 }
 
@@ -2299,7 +2243,7 @@ a {
     width: 40px;
     height: 40px;
     border-radius: 3px;
-    margin-left: 7px;
+    margin-left: 9px;
     background-image: url('../img/star.png');
     background-size: 20px;
     background-repeat: no-repeat;
@@ -2317,8 +2261,8 @@ a {
 
 /* file figma 1-6 */
 .atas .scrol .file1-6 {
-    width: 360px;
-    height: 275px;
+    width: 330px;
+    height: 255px;
     border-radius: 10px;
     transition: .2s;
     margin: 40px 0 0 10px;
@@ -2331,7 +2275,7 @@ a {
 
 .atas .scrol .file1-6 .img {
     width: 100%;
-    height: 210px;
+    height: 190px;
     background-image: url('../img/Lean\ Canvas\ -\ Billionaire.png');
     background-size: cover;
     border-top-left-radius: 5px;
@@ -2340,7 +2284,7 @@ a {
 
 .atas .scrol .file1-6 .capt {
     width: 100%;
-    height: 65px;
+    height: calc(100% - 190px);
     display: flex;
     align-items: center;
     border-bottom-left-radius: 10px;
@@ -2359,13 +2303,13 @@ a {
 }
 
 .atas .scrol .file1-6 .capt p {
-    font-size: 16px;
+    font-size: 12px;
     line-height: 20px;
     color: black;
 }
 
 .atas .scrol .file1-6 .capt p span {
-    font-size: 12px;
+    font-size: 11px;
     color: rgba(0, 0, 0, .5);
 }
 
@@ -2373,7 +2317,7 @@ a {
     width: 40px;
     height: 40px;
     border-radius: 3px;
-    margin-left: 37px;
+    margin-left: 58px;
     background-image: url('../img/star.png');
     background-size: 20px;
     background-repeat: no-repeat;
